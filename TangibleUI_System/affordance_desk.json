@@ -1,0 +1,284 @@
+{
+  "environment_analysis": {
+    "detected_objects": [
+      {
+        "object_id": 1,
+        "object_name": "Computer Mouse",
+        "affordances": [
+          {
+            "affordance_type": "Surface",
+            "potential_profiles": [
+              {
+                "profile_id": "MouseSurface-Tap",
+                "profile": {
+                  "interaction_flow": "discrete",
+                  "value_type": "binary",
+                  "dimensionality": "0D",
+                  "directionality": "none",
+                  "semantic_verb": "SELECT"
+                },
+                "reasoning": "The top surface of the mouse can be tapped with a finger for a discrete selection or trigger event."
+              },
+              {
+                "profile_id": "MouseSurface-Slide",
+                "profile": {
+                  "interaction_flow": "continuous",
+                  "value_type": "ranged",
+                  "dimensionality": "1D",
+                  "directionality": "bidirectional",
+                  "semantic_verb": "ADJUST"
+                },
+                "reasoning": "A finger can slide across the mouse's surface to continuously adjust a value like a slider."
+              }
+            ],
+            "confidence_score": 0.98
+          },
+          {
+            "affordance_type": "Button_like",
+            "potential_profiles": [
+              {
+                "profile_id": "MouseButton-Click",
+                "profile": {
+                  "interaction_flow": "discrete",
+                  "value_type": "binary",
+                  "dimensionality": "0D",
+                  "directionality": "none",
+                  "semantic_verb": "SELECT"
+                },
+                "reasoning": "The primary mouse buttons are designed for discrete click actions to select or activate."
+              }
+            ],
+            "confidence_score": 0.99
+          },
+          {
+            "affordance_type": "Movable_Structure",
+            "potential_profiles": [
+              {
+                "profile_id": "MouseWheel-Scroll",
+                "profile": {
+                  "interaction_flow": "discrete",
+                  "value_type": "ranged",
+                  "dimensionality": "1D",
+                  "directionality": "bidirectional",
+                  "semantic_verb": "NAVIGATE"
+                },
+                "reasoning": "The scroll wheel provides stepped, one-dimensional scrolling for navigation through content."
+              }
+            ],
+            "confidence_score": 0.99
+          },
+          {
+            "affordance_type": "Grabability",
+            "potential_profiles": [
+              {
+                "profile_id": "MouseBody-Move",
+                "profile": {
+                  "interaction_flow": "continuous",
+                  "value_type": "positional_6d",
+                  "dimensionality": "6D",
+                  "directionality": "none",
+                  "semantic_verb": "NAVIGATE"
+                },
+                "reasoning": "The entire mouse is designed to be moved across a 2D surface, which translates to 2D navigation (cursor movement). Potentially it can be lifted and moved in 6D space."
+              }
+            ],
+            "confidence_score": 0.95
+          }
+        ]
+      },
+      {
+        "object_id": 2,
+        "object_name": "Game Controller",
+        "affordances": [
+          {
+            "affordance_type": "Grabability",
+            "potential_profiles": [
+              {
+                "profile_id": "ControllerGrip-Hold",
+                "profile": {
+                  "interaction_flow": "continuous",
+                  "value_type": "positional_6d",
+                  "dimensionality": "6D",
+                  "directionality": "none",
+                  "semantic_verb": "TRANSFORM"
+                },
+                "reasoning": "The controller's handles are designed to be gripped, allowing the user to pick up, hold, and move the entire object in 6 degrees of freedom."
+              }
+            ],
+            "confidence_score": 0.99
+          },
+          {
+            "affordance_type": "Movable_Structure",
+            "potential_profiles": [
+              {
+                "profile_id": "ControllerStick-Pan",
+                "profile": {
+                  "interaction_flow": "continuous",
+                  "value_type": "ranged",
+                  "dimensionality": "2D",
+                  "directionality": "bidirectional",
+                  "semantic_verb": "NAVIGATE"
+                },
+                "reasoning": "The analog sticks provide continuous, two-dimensional input for navigation or camera control."
+              },
+              {
+                "profile_id": "ControllerStick-Click",
+                "profile": {
+                  "interaction_flow": "discrete",
+                  "value_type": "binary",
+                  "dimensionality": "0D",
+                  "directionality": "none",
+                  "semantic_verb": "SELECT"
+                },
+                "reasoning": "The analog sticks can be pressed down, functioning as discrete buttons (L3/R3) for selection."
+              }
+            ],
+            "confidence_score": 0.99
+          },
+          {
+            "affordance_type": "Button_like",
+            "potential_profiles": [
+              {
+                "profile_id": "ControllerButton-Press",
+                "profile": {
+                  "interaction_flow": "discrete",
+                  "value_type": "categorical",
+                  "dimensionality": "0D",
+                  "directionality": "none",
+                  "semantic_verb": "SELECT"
+                },
+                "reasoning": "The various face buttons (X, O, etc.) and D-pad allow for discrete, categorical selections."
+              },
+               {
+                "profile_id": "ControllerTrigger-Press",
+                "profile": {
+                  "interaction_flow": "continuous",
+                  "value_type": "ranged",
+                  "dimensionality": "1D",
+                  "directionality": "unidirectional",
+                  "semantic_verb": "ADJUST"
+                },
+                "reasoning": "The triggers (L2/R2) often provide analog, continuous input along one dimension, suitable for adjusting speed or intensity."
+              }
+            ],
+            "confidence_score": 0.99
+          },
+           {
+            "affordance_type": "Surface",
+            "potential_profiles": [
+              {
+                "profile_id": "ControllerTouchpad-Pan",
+                "profile": {
+                  "interaction_flow": "continuous",
+                  "value_type": "ranged",
+                  "dimensionality": "2D",
+                  "directionality": "bidirectional",
+                  "semantic_verb": "NAVIGATE"
+                },
+                "reasoning": "The central touchpad provides a surface for continuous 2D finger tracking for navigation or cursor control."
+              }
+            ],
+            "confidence_score": 0.97
+          }
+        ]
+      },
+      {
+        "object_id": 3,
+        "object_name": "VR Controller",
+        "affordances": [
+           {
+            "affordance_type": "Grabability",
+            "potential_profiles": [
+              {
+                "profile_id": "VRController-Move",
+                "profile": {
+                  "interaction_flow": "continuous",
+                  "value_type": "positional_6d",
+                  "dimensionality": "6D",
+                  "directionality": "none",
+                  "semantic_verb": "TRANSFORM"
+                },
+                "reasoning": "The controller is designed to be held and tracked in 3D space, providing full 6-DoF input for manipulating virtual objects."
+              }
+            ],
+            "confidence_score": 0.98
+          },
+          {
+            "affordance_type": "Movable_Structure",
+            "potential_profiles": [
+              {
+                "profile_id": "VRTrigger-Pull",
+                "profile": {
+                  "interaction_flow": "continuous",
+                  "value_type": "ranged",
+                  "dimensionality": "1D",
+                  "directionality": "unidirectional",
+                  "semantic_verb": "ADJUST"
+                },
+                "reasoning": "The trigger provides continuous, one-dimensional input, typically used for analog actions like grabbing or shooting with variable force."
+              }
+            ],
+            "confidence_score": 0.95
+          },
+          {
+            "affordance_type": "Button_like",
+            "potential_profiles": [
+              {
+                "profile_id": "VRButton-Press",
+                "profile": {
+                  "interaction_flow": "discrete",
+                  "value_type": "binary",
+                  "dimensionality": "0D",
+                  "directionality": "none",
+                  "semantic_verb": "SELECT"
+                },
+                "reasoning": "The thumbstick and other buttons offer discrete, binary press actions for selection and activation."
+              }
+            ],
+            "confidence_score": 0.96
+          }
+        ]
+      },
+      {
+        "object_id": 4,
+        "object_name": "Pencil Case",
+        "affordances": [
+          {
+            "affordance_type": "Grabability",
+            "potential_profiles": [
+              {
+                "profile_id": "PencilCase-Move",
+                "profile": {
+                  "interaction_flow": "continuous",
+                  "value_type": "positional_6d",
+                  "dimensionality": "6D",
+                  "directionality": "none",
+                  "semantic_verb": "TRANSFORM"
+                },
+                "reasoning": "The case as a whole is easily graspable and can be moved and reoriented in 6-DoF."
+              }
+            ],
+            "confidence_score": 0.9
+          },
+          {
+            "affordance_type": "Movable_Structure",
+            "potential_profiles": [
+              {
+                "profile_id": "PencilCase-Zip",
+                "profile": {
+                  "interaction_flow": "continuous",
+                  "value_type": "ranged",
+                  "dimensionality": "1D",
+                  "directionality": "bidirectional",
+                  "semantic_verb": "TOGGLE"
+                },
+                "reasoning": "The zipper tab can be slid along its track to open or close the case, functioning as a toggle for its state (open/closed) or adjusting the size of the opening."
+              }
+            ],
+            "confidence_score": 0.85
+          }
+        ]
+      }
+    ]
+  }
+}
